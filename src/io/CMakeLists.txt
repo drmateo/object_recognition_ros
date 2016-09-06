@@ -1,8 +1,8 @@
 # create the cells to output messages
-find_package(Eigen3 REQUIRED)
+find_package(Eigen REQUIRED)
 
 include_directories(SYSTEM
-                    ${EIGEN3_INCLUDE_DIRS}
+                    ${Eigen_INCLUDE_DIRS}
                     ${ecto_ros_INCLUDE_DIRS}
                     ${catkin_INCLUDE_DIRS}
                     ${geometry_msgs_INCLUDE_DIRS}

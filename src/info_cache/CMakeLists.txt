@@ -10,7 +10,7 @@ else()
   endif(COMPILER_SUPPORTS_CXX11)
 
   find_package(Eigen3 REQUIRED)
-  include_directories(${EIGEN3_INCLUDE_DIRS})
+  include_directories(${Eigen_INCLUDE_DIRS})
 endif()
 add_library(object_information_cache info_cache.cpp)
 target_link_libraries(object_information_cache ${catkin_LIBRARIES})
